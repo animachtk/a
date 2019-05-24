@@ -8,13 +8,14 @@
 <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
   </head>
 <link href="https://dl.dropbox.com/s/zuyzjyjo792hehn/anim.css" rel="stylesheet">
+<link href="https://dl.dropbox.com/s/3ri7b6kx4dwb8eu/mobile.css" rel="stylesheet">
   <body>
-<div id="wrap" style="min-height: 100%;height: auto;overflow-x: hidden;">
-	<div id="mainpage" style="margin-left: 30vw;margin-right: 30vw;">
+<div id="wrap">
+	<div id="mainpage">
 <div id="nav">
 <center>
 <font color="#836fc1" size="6">Добро пожаловать на наш сайт!</font> <br />
-<div id="motdimg"></div><img src="https://dl.dropbox.com/s/ve2hfacw1at4dmz/58a35f2bb0bd615a3e2bc2cc.png"/ height="300px"><br />
+<img src="https://dl.dropbox.com/s/ve2hfacw1at4dmz/58a35f2bb0bd615a3e2bc2cc.png"/ height="300px"><br />
 </center>
 </div>
 		<div id="nav-buttons">
@@ -25,7 +26,7 @@
 	  		</div>
 		</div>
 
-<div id="inform" style="dispaly: block;position: fixed;top: 0px;right: 15px;width: 180px;height: 60px;z-index: 1030 !important; background: black; border: 1px solid;border-style: solid;border-color: red; padding-left: 5px">
+<div id="inform">
 <tr><a href="https://tv.2ch.hk/r/a" target="_blank" style="color: red; font-size: 14px">Смотрим аниме тут - https://tv.2ch.hk/r/a <img src="https://dl.dropbox.com/s/iu9uw1r1smylkyc/main%402x.png" height="50px" style="float: right; width: 50px; top: -20px;" /></a></tr>
 </div>
 
@@ -43,7 +44,7 @@
 <div id="news" style="padding-top: 10px; margin-bottom: 10px;text-align: left">
 <center>
 <img src="https://dl.dropbox.com/s/oem8wyhj7e42h4c/Akari_akaza_by_yukirumo990-d4ifcuc.png" height="200px"/></br>
-<font color="red" size="5">Что нового?</font>
+<font color="red" size="6">Что нового?</font>
 </center> <br />
 <span><span class="date">24.02.2019</span> - Мы переехали на тивач (tv.2ch.hk) (основной канал теперь там - <a href="https://tv.2ch.hk/r/a" target="_blank" style="color: #29bbff;"><font size="4">https://tv.2ch.hk/r/a/</font></a>) <br /></span>
 <span><span class="date">23.05.2019</span> - Обновлён список смайлов, удалено много неиспользуемых. <a href="https://www.dropbox.com/s/pqqme0uc8ebqmm1/emotelist_23.05.19.txt?raw=1" target="_blank" style="color: #29bbff;"><font size="4">ссылка на бекап</font></a> <br /></span>
@@ -59,24 +60,16 @@
 <script>
 /*radio*/
 /***/
-
 var rad_backcolor="#000000b3"; var rad_backcolor2="#e8e8e8"; var rad_textcolor="#000000"; var rad_bordercolor="#ffffff"; var rad_volumecolor="#30325e"; var rad_logo = "black"; var rad_width=300; var rad_type = "horizontal"; var rad_autoplay = false;var rad_stations =[['http://jazz-wr06.ice.infomaniak.ch/jazz-wr06-128.mp3','Funk (Jazz Radio)'],['http://ic7.101.ru:8000/v1_1?','Радио NRJ'],['http://ep256.hostingradio.ru:8052/europaplus256.mp3','Europa Plus'],['http://213.59.4.27:8000/silver128.mp3','Серебряный дождь'],['https://aacplus.ru:8003/echo.aac','Эхо Москвы'],['http://sportfm128.streamr.ru','Радио СПОРТ ФМ'],['http://air2.radiorecord.ru:805/sd90_320','Супердискотека 90-х'],['http://retro90.hostingradio.ru:8025/retro90-128.mp3','Ретро FM 90-е'],['http://91.207.59.26:8000/c7_0?setst=-1','Дискотека 80-х'],['http://ic7.101.ru:8000/a200?userid=0','Relax FM'],['http://195.242.219.208:8200/enigma','Radio Enigma'],['http://pool.anison.fm:9000/AniSonFM(320)','Аниме радио'],['https://zaycevfm.cdnvideo.ru/ZaycevFM_rock_256.mp3','Зайцев.FM New Rock'],['http://relay.radio.obozrevatel.com:8000/heavymetal128.mp3','Heavy Metal'],['http://relay.radio.obozrevatel.com:8000/Alternative_Rock128.mp3','Альтернативный рок'],['http://radio.metalnation.ru/radio','Metal Nation'],['http://zaycevfm.cdnvideo.ru/ZaycevFM_rnb_256','Зайцев.FM RNB'],['http://icecast.dropthebass.ru:8000/stream','Drop The Bass Radio'],['http://air.radiorecord.ru:805/vip_320','Record Vip House'],['http://air2.radiorecord.ru:805/tm_320','Record Trancemission'],['http://air2.radiorecord.ru:805/club_320','Record EDM'],['http://online.radiorecord.ru:8102/teo_128','Record Hardstyle'],['http://online.radiorecord.ru:8102/dc_128','Record Dancecore'],['http://air.radiorecord.ru:805/brks_320','Record Breaks']]
-
 var g_volume = 100;
 var g_link = rad_stations[0][0];
 var is_play = false;
 var g_playimg = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo3NDY1RTE2OEU1MDgxMUUyQkI1NEE5RTU3ODVBMkQyMiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo3NDY1RTE2OUU1MDgxMUUyQkI1NEE5RTU3ODVBMkQyMiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjkyNEQ0MkJGRTRGRTExRTJCQjU0QTlFNTc4NUEyRDIyIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjkyNEQ0MkMwRTRGRTExRTJCQjU0QTlFNTc4NUEyRDIyIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Wv5KrAAAAlNJREFUeNpi/P//P8NgA0wMgxCwUGoAIyMjRfqxxdSgDClGQmmK0pAYkOgrKiqiSH9fXx9FjmIGYlaont9Q/G+gQ4o1Ly9vLgsLi8/v37/nXrlypW///v2vgeI/B7JIYAU6KAJI87GyshYaGhpeyMrKyl65cqUgMArYBjJNIXtCmIODozcsLCz127dvzUCHbQCK/QKmsT+DoZzS4ObmXlpQUHD47du3VUDHnQGlN6Dj/g6Yo+BByMRkKyoqehCY7lY9e/asCei4e9CQ+0/LNEWUeaB0JycndzY3N7fZ0tJSnJz0RqsSnROYGUqBjjoPzAw5pGYGFgbaAglYZvjy5Qsove0kJjPQ2lHwzMDLy7sOmBn2AzNDHaHMQErdxws05BMV3Pjvz58/S+/fv9+8efPmR9gK34FoJYAyQ6yqqur57OzsXCCffTA1XbjZ2dkrgTTbYHLU1x8/fjSBHDcgCR1PmvoM5H8fUEf9+/dvz5s3b+qWLFlyD9rseQ/EfwbEUcAcfgNUTs2ePfswtF32AZiTf1KjkUcOeAFMNy0bN25c9vTpU1Au+w50zNeBKtG/AxuCU86cOdN3/Pjx/9Coekls5cxCi0T86NGjtg0bNnyANpnfAx1DUrOZhYqJGNyeWrx48W1YIia3wcdCpURcA0zEB9ETMb0aeaA0AasM3wITcRswEc8nJRFT21G///79u4aZmdkVmIhnnzt3rv/o0aP/oQ59SU4Lkxo9ZFi/D1RXcZGbiKndGf0LxT+A+BMtC7dBOZYwKEddhuZQ0GhIQQFAgAEA2R8mgnSBRbIAAAAASUVORK5CYII=";
-
 var g_pauseimg = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo3NDY1RTE2Q0U1MDgxMUUyQkI1NEE5RTU3ODVBMkQyMiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo3NDY1RTE2REU1MDgxMUUyQkI1NEE5RTU3ODVBMkQyMiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjc0NjVFMTZBRTUwODExRTJCQjU0QTlFNTc4NUEyRDIyIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjc0NjVFMTZCRTUwODExRTJCQjU0QTlFNTc4NUEyRDIyIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+h76mDgAAALlJREFUeNpi/P//P8NgA0wMgxCMOmrUUdQGLMQoKi4uJqimt7eXZLXUCClPIH4GxP+R8DOoODqwAeKraGqvQsWpGn1zgVgSTUwSKo4OlgGxFpqYFlScqo6SJEFcFoda2dHcN+qoUUeNOmrUUaOOGnXUqKNGHTXqqKHpqOc4xF9gEXuMQ+1jajsqBYsDngJxMha1UUB8A00MxI+mWr8PCrbh6TyggyNArElu9DGODgWNOmrUUQMEAAIMAILtJINH3aicAAAAAElFTkSuQmCC";
-
 var g_radiologo = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAAAVCAYAAAAHIbMXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo4REVCMDM2RkQxREYxMUUyOEJBQUYzQTJGMkZBNzU0QyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo4REVCMDM3MEQxREYxMUUyOEJBQUYzQTJGMkZBNzU0QyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjhERUIwMzZERDFERjExRTI4QkFBRjNBMkYyRkE3NTRDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjhERUIwMzZFRDFERjExRTI4QkFBRjNBMkYyRkE3NTRDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+G1/AVAAAA0BJREFUeNrsWNFt2zAQtYv8W51AygSWgfxHnqDKBFImiD1B7AmiTGB6A3kCK/8GSm+gTFB5AvcYvCteCdkxWjdwUBE4iBLJ4927u0dJ/f1+3+van7UvHQQdeB14HXj/Ubs6NHBzcxPIJXb9zWZTHZl3DjsikUSkFrEizUcBIL6dL/MEjEiklO4PkbUTuW9E4hN1piIO7ODE+TPMX2A/t29xZL6zw+CaUP8iytYB9w39a5GRyABOntJykVtybo/roYx7FAlFtiJfRV5EHo6sccHJSH8GPRcDnnPkVVK6FrF4fmomKfC67gXl2Nbc82f0Dcq1fke/2lERaPYiwBOwZjDQahljqKGyTsCJfjlptrxifkVcpo5HLQD2qNRdZu0IkMjLwgT6a/S36McIfPwOr/Y8Xec7MABWSLzz6+pAg4GujOco5QCOD0mNwfMaYynKeYHxe+KqHGCpHqf7DuD7a0rsswQYIZ5pxYQH+NKgvFnPm83i05ZANLA5hT0FaOVZkmpyymlrlFtEcQr+WtJJaL0oFrgfg/B3eJYCiJIM2WL9jPhO25rKXDNoAX0DrEsoS2OvfEOuEC+7MuytAZ6gPxV5wn1K47rnBP0YieWujsqaQ5ynRt1C7mRyjiwY4PrGM1CWAXDrgVlQRhRYO4QzIYydY84SGTHHnjntM8AYB7bygCygYweH20ozRYAtzdHrI4G+on3U5wYVyTzbCl4DTpl6nJTQhiEZroRd0Xotvy0c05KZY+0KQYrodcWQjojGxlT+gxa+a7B/gEBl6CfeIdd4ti0JsBEFf+bpVv+c7pIO0N/BI75jMBIPxBwOPEDhDuWlhj7h+RyZloLDNMKcHQnuWbfuVVI5rymT1a4h9QOc8hlOb4M1Oc1xOr9jbIW5Q/CZRTD1oBvS/pyZk2Ocp8ZXTiG+HgLKOENRjtyXBwDX0zml6Kqj+sUwgoEVHIkoCzXiGcAs6bUlojWWMuSe9pnRfEMnr6HMSvHM0qluKZMK3Nfi0xh9V65T8Fzpl2if/+fJxBoOXUPJHtEweIU55+dZjExQctbDYvKR721/83l21UauDjgi8n/1Bm8pG2virk/T+t2f5O6XVAfeZ2s/BRgAHxBDDDO9ykQAAAAASUVORK5CYII=";
-
 var g_radiologowhite = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAAAVCAYAAAAHIbMXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQzJERUVFNUQyNjExMUUyOEJBQUYzQTJGMkZBNzU0QyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozQzJERUVFNkQyNjExMUUyOEJBQUYzQTJGMkZBNzU0QyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjk4RjlCQzY0RDIzNjExRTI4QkFBRjNBMkYyRkE3NTRDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNDMkRFRUU0RDI2MTExRTI4QkFBRjNBMkYyRkE3NTRDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+hs9dHQAAAqhJREFUeNrsWNGN3CAQ9UX5Dx3EJZAOSAVxB+cSnA5IB6QDXwdOB04HpAPSAR0QVnojvYzAt1rdZXWKkUbGYIbhMfNmdh9KKcPZbmvvTghO8E7wTvD+o/b+YM5Usejvr2zHWMVVSVVilfwm0LtkWyVjla383XIV2/i2JVOVvYq58ntfJan9wsH3FztWPB31h38trcFIhxhhWAGg1ygV4B1E+r2LkhYB+P7MGo/5mfrTPcBrcd5W5VeV3xRGEsbXtC94yrqf0NNql/Hv6K8I1/SMfkNUMqq97h62A8JoU97B764RlpY8LXX0GqznsQVrLOYzxKj9ODIS2Rlp/+0ghMeGN7uXDlsBa+mEYca7J0Ci4ixPQAjoM83PdOCI7xzpmTprDPor2RkIyF64rw09UdGFga0BujLRQrgWPOGcnfpibMZYwlMMy+R14jWzMjbD0BXrfWm3nYAtdFkWoIrOiYBm7rQN7yoEFnPlQpcdVYIsFAVskzkCL6vDTIqoRxw+0AEDeYXHuOgx6uYTHcbT5cwqGQTlLaxzpHnxGLnEtZNgJGxZT1KXVsj7Cl3QRs5jjxJGRrL4SqQ+oA67tKXKR1X/Repn9D8g8YQqj5j7hrU/UEMK4XskjJ3qPpn7DBtEpyQyB/0Z+xsku0f0nUpyWdn2RPXkJ0o6XumW822Q2EsYnBys4r6VXDmRx7RucaUbz3SD8j4ST+UGN82K74ry0kFxUVA14ka2OxWKQdWxgegqEQae1pZW7dqroRYykBODo4zpCHBLBbJTfGOIL2YCTmdxrzhT1vOaifo8brB+VntxJeDJTkNUMDR0s91Lr45slSiFlBQi95cuMnVCkNu9y6+FW0T/tnWK557AIeMrlJgRXGOxX75bsXtjezj/ST7/kjrBe2vtjwADAEeGheohZXviAAAAAElFTkSuQmCC";
-
 var g_select = "";
-
 var rad_plogo = g_radiologo;
-
 var select_radius = 'border-radius: 5px;';
 if (rad_type=='vertical'){
 	var select_radius = '';	
@@ -89,7 +82,6 @@ for (var i=0; i<rad_stations.length; i++){
 select += '</div>';
 	
 var volume = '<div style="width: 5px; height: 4px; background-color: '+rad_volumecolor+'; float: left; display: block; margin-right: 2px; margin-top: 20px; cursor: pointer; border-radius: 3px;" id="rad_volume1" class="rad_volume" onclick="return rad_setvolume(1);"></div><div style="width: 5px; height: 8px; background-color: '+rad_volumecolor+'; float: left; display: block; margin-right: 2px; margin-top: 16px; cursor: pointer; border-radius: 3px;" id="rad_volume2" class="rad_volume" onclick="return rad_setvolume(2);"></div><div style="width: 5px; height: 12px; background-color: '+rad_volumecolor+'; float: left; display: block; margin-right: 2px; margin-top: 12px; cursor: pointer; border-radius: 3px;" id="rad_volume3" class="rad_volume" onclick="return rad_setvolume(3);"></div><div style="width: 5px; height: 16px; background-color: '+rad_volumecolor+'; float: left; display: block; margin-right: 2px; margin-top: 8px; cursor: pointer; border-radius: 3px;" id="rad_volume4" class="rad_volume" onclick="return rad_setvolume(4);"></div><div style="width: 5px; height: 20px; background-color: '+rad_volumecolor+'; float: left; display: block; margin-right: 2px; margin-top: 4px; cursor: pointer; border-radius: 3px;" id="rad_volume5" class="rad_volume" onclick="return rad_setvolume(5);"></div><div style="width: 5px; height: 24px; background-color: '+rad_volumecolor+'; float: left; display: block; cursor: pointer; border-radius: 3px;" id="rad_volume6" class="rad_volume" onclick="return rad_setvolume(6);"></div>';
-
 if (rad_logo=='black'){
 	rad_plogo = g_radiologo;
 }else{
@@ -100,7 +92,6 @@ if (rad_type=='vertical'){
 }else{
 	document.getElementById('radiobells_container').innerHTML = '<div style="width: auto; height: 66px; padding: 8px 0px 0px 0px; border: 0px solid '+rad_bordercolor+'; background-color: '+rad_backcolor+'; box-sizing: content-box !important;" id="rad_player"><div style="height: 28px;" align="center" id="rad_controls"><div style="display: inline-block; border: 0px solid '+rad_bordercolor+'; background-color: '+rad_backcolor2+'; margin-right: 10px; border-radius: 19px;"><img src="'+g_playimg+'" id="rad_play_btn" onclick="rad_playstop(); return false;" style="cursor: pointer; margin: 0px; vertical-align: middle; border: none;" align="absmiddle"></div><div style=" display:inline-block;">'+select+'</div><div style="display:inline-block; padding-left: 10px; margin-bottom: -5px;">'+volume+'</div></div><div style="padding-top: 0px; margin-top: 15px; border-top: 0px solid '+rad_bordercolor+';"></div></div>';
 }
-
 var g_audio = document.createElement('audio');
 	
 document.onreadystatechange = function () {
@@ -110,7 +101,6 @@ document.onreadystatechange = function () {
 		}
 	}
 }
-
 function rad_selectthis(t){
 	document.getElementById('rad_list').style.display='none';
 	g_link = t.getAttribute('data-url');
@@ -118,7 +108,6 @@ function rad_selectthis(t){
 	rad_loadmusic();
 	return false;
 }
-
 function rad_show_stations(){
 	if (document.getElementById('rad_list').style.display=='none'){
 		document.getElementById('rad_list').style.display='block';
@@ -127,7 +116,6 @@ function rad_show_stations(){
 	}
 	return false;
 }
-
 function rad_loadmusic(){
 	g_audio.src = g_link;
 	g_audio.volume = g_volume/100;
@@ -135,7 +123,6 @@ function rad_loadmusic(){
 	is_play = true;
 	document.getElementById('rad_play_btn').src = g_pauseimg;
 }
-
 function rad_playstop(){
 	if (is_play){
 		g_audio.pause();
@@ -149,7 +136,6 @@ function rad_playstop(){
 		is_play = true;
 	}
 }
-
 function rad_setvolume(vol){
 	if (vol==1){
 		g_volume = 0;
@@ -175,71 +161,7 @@ function rad_setvolume(vol){
 }
 /***/
 </script>
-	  
-	  <script>
-	function clock() {
-var d = new Date();
-var month_num = d.getMonth();
-var today_num = d.getDay();
-var day = d.getDate();
-var hours = d.getHours(d.getUTCHours() +3);
-var minutes = d.getMinutes();
-var seconds = d.getSeconds();
-var days = d.getUTCDate();
- 
-today=new Array("Воскресенье" ,"Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота");
- 
-month=new Array("января", "февраля", "марта", "апреля", "мая", "июня",
-"июля", "августа", "сентября", "октября", "ноября", "декабря");
- 
-if (day <= 9) day = "0" + day;
-if (hours <= 9) hours = "0" + hours;
-if (minutes <= 9) minutes = "0" + minutes;
-if (seconds <= 9) seconds = "0" + seconds;
-if (day == 1) days = '<img src="https://dl.dropbox.com/s/i1y8n03pqmanvzu/36.png" style="max-height: 200px"/>';
-if (day == 2) days = '<img src="https://dl.dropbox.com/s/rvoxfv65h6aqw8y/2152733-neptunia_mk2_014.png" style="max-height: 200px"/>';
-if (day == 3) days = '<img src="https://dl.dropbox.com/s/jphw8qj6pxz2glt/rin_dance.png" style="max-height: 200px"/>';
-if (day == 4) days = '<img src="https://dl.dropbox.com/s/isweaq5d7n0gu9a/fuck%20you%20I%27m%20a%20tomato.png" style="max-height: 200px"/>';
-if (day == 5) days = '<img src="https://dl.dropbox.com/s/mnj8bb2lol936zb/Kotomi_Render.png" style="max-height: 200px"/>';
-if (day == 6) days = '<img src="https://dl.dropbox.com/s/mb39z7c9qcl9oyc/towa_erio_denpa_onna_to_seishun_otoko_by_amassu-d7icf2o.png" style="max-height: 200px"/>';
-if (day == 7) days = '<img src="https://dl.dropbox.com/s/d41f4s1ap884mwc/tumblr_m54hokR4TH1qk9lh4.png" style="max-height: 200px"/>';
-if (day == 8) days = '<img src="https://dl.dropbox.com/s/k8fbbp6pltjitgl/Kotori-kanbe.png" style="max-height: 200px"/>';
-if (day == 9) days = '<img src="https://dl.dropbox.com/s/fu4c59cy3f3gac1/9u3V2Ln.png" style="max-height: 200px"/>';
-if (day == 10) days = '<img src="https://dl.dropbox.com/s/7t4mbidnpyqx7t0/58a35f2b2dfaf15a3e2bc0b4.png" style="max-height: 200px"/>';
-if (day == 11) days = '<img src="https://dl.dropbox.com/s/0iexjhtarcjqbg8/aikatsu%2Bichigo%2Bdoushio%2Bhype%2Brender.png" style="max-height: 200px"/>';
-if (day == 12) days = '<img src="https://dl.dropbox.com/s/exuo4amp4jxsznf/momod.png" style="max-height: 200px"/>';
-if (day == 13) days = '<img src="https://dl.dropbox.com/s/xbgrfsfyqywrftn/57dd454b6b34e1573856aeaf.png" style="max-height: 200px"/>';
-if (day == 14) days = '<img src="https://dl.dropbox.com/s/9tsiwbvvh40f9aw/00108.png" style="max-height: 200px"/>';
-if (day == 15) days = '<img src="https://dl.dropbox.com/s/z3vr5zryxqyz87p/00134.png" style="max-height: 200px"/>';
-if (day == 16) days = '<img src="https://dl.dropbox.com/s/652k297zrnwd30a/00138.png" style="max-height: 200px"/>';
-if (day == 17) days = '<img src="https://dl.dropbox.com/s/x5ohgri6vydipaz/00156.png" style="max-height: 200px"/>';
-if (day == 18) days = '<img src="https://dl.dropbox.com/s/zsgpc30iuq68lmv/5877c1a8a829a15993cc7af1.png" style="max-height: 200px"/>';
-if (day == 19) days = '<img src="https://dl.dropbox.com/s/xaodp1gtxpf36cr/583ab1f811b47158a5473109.png" style="max-height: 200px"/>';
-if (day == 20) days = '<img src="https://dl.dropbox.com/s/lert97hgnaohiq5/5908b6063443815bca070846.png" style="max-height: 200px"/>';
-if (day == 21) days = '<img src="https://dl.dropbox.com/s/gl2pos88mwi77an/rad-000-003.png" style="max-height: 200px"/>';
-if (day == 22) days = '<img src="https://dl.dropbox.com/s/e9sxizfepkpwxbu/yui_hirasawa_png_by_animepng-d7bzd5v.png" style="max-height: 200px"/>';
-if (day == 23) days = '<img src="https://i.imgur.com/IY67T4Z.png" style="max-height: 200px"/>';
-if (day == 24) days = '<img src="https://dl.dropbox.com/s/w7ysvsv6vn1y5cr/kyou01.png" style="max-height: 200px"/>';
-if (day == 25) days = '<img src="https://dl.dropbox.com/s/7ccv5nh4ag296s3/kafuu_chino_render_by_aichwandesu-d7dw9y7.png" style="max-height: 200px"/>';
-if (day == 26) days = '<img src="https://dl.dropbox.com/s/61m2ossfkyfgpuv/Mei_%28extraction%29.png" style="max-height: 200px"/>';
-if (day == 27) days = '<img src="https://dl.dropbox.com/s/jvb54gixemr8vcv/lucia_konohana_by_zaydo-d5qqong.png" style="max-height: 200px"/>';
-if (day == 28) days = '<img src="https://dl.dropbox.com/s/hcysw8lhe7lc6im/nakatsushizurubymgmnzxv.png" style="max-height: 200px"/>';
-if (day == 29) days = '<img src="https://dl.dropbox.com/s/ccabattvlkliozg/Kanon2006.png" style="max-height: 200px"/>';
-if (day == 30) days = '<img src="https://dl.dropbox.com/s/np3822hxjt6xvx6/puella_magi_madoka_magica___madoka_render_by_anouet-d5faklk.png" style="max-height: 200px"/>';
-if (day == 31) days = '<img src="https://dl.dropbox.com/s/iagt3lwf33l5nf8/senri_akane_by_zaydo-d5r4ddc.png" style="max-height: 200px"/>';function msk(){d.setHours( d.getHours() + 3, d.getMinutes() + d.getTimezoneOffset()  );return d.toTimeString().substring(0,8)}
- 
-date_time = days + "<br \/>" + "Сегодня - " + today[today_num]+ " " + day + " " + month[month_num] + " " + d.getFullYear() +
-" г.&nbsp;&nbsp;&nbsp;<br \/> Текущее время - "+ hours + ":" + minutes + ":" + seconds + "<br \/> Московское время (UTC+3) - " +  msk();
-if (document.layers) {
- document.layers.doc_time.document.write(date_time);
- document.layers.doc_time.document.close();
-}
-else document.getElementById("doc_time").innerHTML = date_time;
- setTimeout("clock()", 1000);
-}
-$('<center><span style="color: #75cbff; font-size: 24px; font-weight: bold" id="doc_time">Дата и время</span></center>').appendTo('#motdimg');
-clock();
-	  </script>
+
 	</div>
 
 <div id="widgets">
