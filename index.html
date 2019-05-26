@@ -15,46 +15,7 @@
 	<div id="mainpage">
 <div id="nav">
 <center>
-<font color="#836fc1" size="6">Добро пожаловать на наш сайт!</font> <br />
-<img src="https://dl.dropbox.com/s/ve2hfacw1at4dmz/58a35f2bb0bd615a3e2bc2cc.png"/ height="300px"><br />
-</center>
-</div>
-		<div id="nav-buttons">
-			<div id="motd-tabs" style="text-align:center;">
-		  <a class="btn" href="faq.html" style="text-decoration: none">FAQ</a>
-		  <a class="btn" title="Предложите своё аниме для совместного просмотра" href="requests.html" style="text-decoration: none" >Реквесты</a>
-		  <a class="btn" href="" >Контакты</a>
-	  		</div>
-		</div>
-
-<div id="inform">
-<tr><a href="https://tv.2ch.hk/r/a" target="_blank" style="color: red; font-size: 14px">Смотрим аниме тут - https://tv.2ch.hk/r/a <img src="https://dl.dropbox.com/s/iu9uw1r1smylkyc/main%402x.png" height="50px" style="float: right; width: 50px; top: -20px;" /></a></tr>
-</div>
-
-<div id="links" style="background: black; border: 1px solid;border-style: solid;border-color: #836fc1;padding-left: 5px;margin-top: 15px;margin-left: 10vw;margin-right: 10vw;">
-<center>
-<font color="#836fc1" size="5">Наши комнаты</font> <br />
-<a href="http://synchtube.ru/r/pururin" target="_blank"><font size="4">Пурурин</a></font><br />
-<a href="https://tv.2ch.hk/r/a" target="_blank"><font size="4">Два.ч</font></a><br />
-<a href="https://owlch.ru/r/a" target="_blank"><font size="4">Овла.ч</font></a><br />
-<a href="https://taverna.tv/r/pururin" target="_blank"><font size="4">Таверна.тв</font></a><br />
-<a href="https://cytu.be/r/pur" target="_blank"><font size="4">cytu.be</font></a><br />
-</center>
-</div></br>
-
-<div id="news" style="padding-top: 10px; margin-bottom: 10px;text-align: left">
-<center>
-<img src="https://dl.dropbox.com/s/oem8wyhj7e42h4c/Akari_akaza_by_yukirumo990-d4ifcuc.png" height="200px"/></br>
-<font color="red" size="6">Что нового?</font>
-</center> <br />
-<span><span class="date">24.02.2019</span> - Мы переехали на тивач (tv.2ch.hk) (основной канал теперь там - <a href="https://tv.2ch.hk/r/a" target="_blank" style="color: #29bbff;"><font size="4">https://tv.2ch.hk/r/a/</font></a>) <br /></span>
-<span><span class="date">23.05.2019</span> - Обновлён список смайлов, удалено много неиспользуемых. <a href="https://www.dropbox.com/s/pqqme0uc8ebqmm1/emotelist_23.05.19.txt?raw=1" target="_blank" style="color: #29bbff;"><font size="4">ссылка на бекап</font></a> <br /></span>
-<span><span class="date">23.05.2019</span> - Добавлена новая панель смайлов (мало кому это будет интересно). Суть её в том что она обновляет список доступных смайлов без обновления страницы (очень полезна при удалении смайлов). <br /></span>
-<span><span class="date">23.05.2019</span> - Создан небольшой сайт на Github Pages для размещения информации и доступен по редиректу <a href="http://animach.tk" style="color: #29bbff;"><font size="4">http://animach.tk/</font></a> <br /></span>
-<span><span class="date">25.05.2019</span> - Сайт оптимизирован под мобильные экраны.  <br /></span>
-<span><span class="date">26.05.2019</span> - Сайт теперь доступен по адресу <a href="https://animachtk.github.io/a/" style="color: #29bbff;"><font size="4">https://animachtk.github.io/a/</font></a> или редиректу <a href="http://animach.tk" style="color: #29bbff;"><font size="4">http://animach.tk/</font></a>. Предыдущая ссылка изменена. <br /></span>
-
-</div>
+<font color="#836fc1" class="greeting" size="6">Добро пожаловать на наш сайт!</font> <br />
 
 <script>
 function clock() {
@@ -114,9 +75,49 @@ if (document.layers) {
 else document.getElementById("doc_time").innerHTML = date_time;
  setTimeout("clock()", 1000);
 }
-$('<center><span style="color: #75cbff; font-size: 24px; font-weight: bold" id="doc_time">Дата и время</span></center>').appendTo('#wrap');
+$('<center><span style="color: #75cbff; font-size: 24px; font-weight: bold" id="doc_time">Дата и время</span></center>').insertAfter('.greeting');
 clock();	
 </script>
+
+<br />
+</center>
+</div>
+		<div id="nav-buttons">
+			<div id="motd-tabs" style="text-align:center;">
+		  <a class="btn" href="faq.html" style="text-decoration: none">FAQ</a>
+		  <a class="btn" title="Предложите своё аниме для совместного просмотра" href="requests.html" style="text-decoration: none" >Реквесты</a>
+		  <a class="btn" href="" >Контакты</a>
+	  		</div>
+		</div>
+
+<div id="inform">
+<tr><a href="https://tv.2ch.hk/r/a" target="_blank" style="color: red; font-size: 14px">Смотрим аниме тут - https://tv.2ch.hk/r/a <img src="https://dl.dropbox.com/s/iu9uw1r1smylkyc/main%402x.png" height="50px" style="float: right; width: 50px; top: -20px;" /></a></tr>
+</div>
+
+<div id="links" style="background: black; border: 1px solid;border-style: solid;border-color: #836fc1;padding-left: 5px;margin-top: 15px;margin-left: 10vw;margin-right: 10vw;">
+<center>
+<font color="#836fc1" size="5">Наши комнаты</font> <br />
+<a href="http://synchtube.ru/r/pururin" target="_blank"><font size="4">Пурурин</a></font><br />
+<a href="https://tv.2ch.hk/r/a" target="_blank"><font size="4">Два.ч</font></a><br />
+<a href="https://owlch.ru/r/a" target="_blank"><font size="4">Овла.ч</font></a><br />
+<a href="https://taverna.tv/r/pururin" target="_blank"><font size="4">Таверна.тв</font></a><br />
+<a href="https://cytu.be/r/pur" target="_blank"><font size="4">cytu.be</font></a><br />
+</center>
+</div></br>
+
+<div id="news" style="padding-top: 10px; margin-bottom: 10px;text-align: left">
+<center>
+<img src="https://dl.dropbox.com/s/oem8wyhj7e42h4c/Akari_akaza_by_yukirumo990-d4ifcuc.png" height="200px"/></br>
+<font color="red" size="6">Что нового?</font>
+</center> <br />
+<span><span class="date">24.02.2019</span> - Мы переехали на тивач (tv.2ch.hk) (основной канал теперь там - <a href="https://tv.2ch.hk/r/a" target="_blank" style="color: #29bbff;"><font size="4">https://tv.2ch.hk/r/a/</font></a>) <br /></span>
+<span><span class="date">23.05.2019</span> - Обновлён список смайлов, удалено много неиспользуемых. <a href="https://www.dropbox.com/s/pqqme0uc8ebqmm1/emotelist_23.05.19.txt?raw=1" target="_blank" style="color: #29bbff;"><font size="4">ссылка на бекап</font></a> <br /></span>
+<span><span class="date">23.05.2019</span> - Добавлена новая панель смайлов (мало кому это будет интересно). Суть её в том что она обновляет список доступных смайлов без обновления страницы (очень полезна при удалении смайлов). <br /></span>
+<span><span class="date">23.05.2019</span> - Создан небольшой сайт на Github Pages для размещения информации и доступен по редиректу <a href="http://animach.tk" style="color: #29bbff;"><font size="4">http://animach.tk/</font></a> <br /></span>
+<span><span class="date">25.05.2019</span> - Сайт оптимизирован под мобильные экраны.  <br /></span>
+<span><span class="date">26.05.2019</span> - Сайт теперь доступен по адресу <a href="https://animachtk.github.io/a/" style="color: #29bbff;"><font size="4">https://animachtk.github.io/a/</font></a> или редиректу <a href="http://animach.tk" style="color: #29bbff;"><font size="4">http://animach.tk/</font></a>. Предыдущая ссылка изменена. <br /></span>
+
+</div>
 
 <div id="radiobells_container"><a href="https://www.radiobells.com/" rel="nofollow" id="RP_link">www.radiobells.com</a> #radiobells_script_hash</div>
 
