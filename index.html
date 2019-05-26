@@ -16,7 +16,7 @@
 <div id="nav">
 <center>
 <font color="#836fc1" class="greeting" size="6">Добро пожаловать на наш сайт!</font> <br />
-<div id="motdimg"></div><br />
+
 </center>
 </div>
 		<div id="nav-buttons">
@@ -56,8 +56,24 @@
 
 </div>
 
+<div id="leftpanel">
+
 <div id="radiobells_container"><a href="https://www.radiobells.com/" rel="nofollow" id="RP_link">www.radiobells.com</a> #radiobells_script_hash</div>
 <script type="text/javascript" src="https://dl.dropbox.com/s/vu8ws89d8vvfsg8/radio.js"></script>
+
+<script>
+afbtn = $('<span id="af-btn" title="Открыть канал в окне" style="position:fixed;right:71vw;bottom: 0px" class="btn btn-sm btn-default"><img src="https://dl.dropbox.com/s/ypmx9scwx0nrhmj/o_07039a057ff6c194-2.ico"/></span>').appendTo("#news").on("click", function() {
+if (!$(this).hasClass('btn-success')) {
+$(this).addClass('btn-success').html('<img title="Закрыть канал в окне" src="https://dl.dropbox.com/s/ypmx9scwx0nrhmj/o_07039a057ff6c194-2.ico"/>');
+$('<div id="aframe"><iframe src="http://synchtube.ru/r/pururin" width="100%" frameborder="0" ></iframe>').appendTo("#leftpanel");
+} else {
+$(this).removeClass('btn-success').html('<img title="Открыть канал в окне" href="requests.html" src="https://dl.dropbox.com/s/ypmx9scwx0nrhmj/o_07039a057ff6c194-2.ico"/>');
+$('#aframe').remove();}
+  });  
+</script>
+
+</div>
+
 	</div>
 
 <!-- VK Widget -->
