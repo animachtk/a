@@ -20,98 +20,13 @@
 
 </center>
 </div>
-
-	<div class="container-blocks">
-  <ul id="slides">
-    <li class="slide showing">
-            <div id="slide-block1" class="shadow">
-            <center><a href="faq.html" style="text-decoration: none">FAQ</a></center>
-            </div>
-        <img src="https://animachtk.000webhostapp.com/slides/img/images/slide01/random.php" style="height: 250px;position: absolute;bottom: 0px;left: 15vw;"/>
-    </li>
-    <li class="slide">
-            <div id="slide-block2" class="shadow">
-            <center><a href="requests.html" style="text-decoration: none">Реквесты</a></center>
-            </div>
-<img src="https://animachtk.000webhostapp.com/slides/img/images/slide02/random.php" style="height: 250px;position: absolute;bottom: 0px;"/>
-        </li>
-    <li class="slide">
-            <div id="slide-block3" class="shadow">
-            <center><a href="raspisanie.html" style="text-decoration: none">Расписание</a></center>
-            </div>
-        <img src="https://animachtk.000webhostapp.com/img/002.png" style="height: 250px;position: absolute;bottom: 0px;"/><a target="_blank" href=""></a>
-        </li>
-  </ul>
-<center>
-  <div class="buttons" style="position: inherit !important;margin: auto">
-    <button class="controls" id="previous" style="float: left">&lt;</button>
-
-    <button class="controls" id="pause" style="margin: auto; margin-top: 10px">&#10074;&#10074;</button>
-
-    <button class="controls" id="next" style="float: right; margin-right: 15px">&gt;</button>
-  </div>
-</center>
-</div>
-
-<script>
-var controls = document.querySelectorAll('.controls');
-for(var i=0; i<controls.length; i++){
-    controls[i].style.display = 'inline-block';
-}
-
-var slides = document.querySelectorAll('#slides .slide');
-var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,20000);
-
-function nextSlide(){
-    goToSlide(currentSlide+1);
-}
-
-function previousSlide(){
-    goToSlide(currentSlide-1);
-}
-
-function goToSlide(n){
-    slides[currentSlide].className = 'slide';
-    currentSlide = (n+slides.length)%slides.length;
-    slides[currentSlide].className = 'slide showing';
-}
-
-
-var playing = true;
-var pauseButton = document.getElementById('pause');
-
-function pauseSlideshow(){
-    pauseButton.innerHTML = '&#9658;'; // play character
-    playing = false;
-    clearInterval(slideInterval);
-}
-
-function playSlideshow(){
-    pauseButton.innerHTML = '&#10074;&#10074;'; // pause character
-    playing = true;
-    slideInterval = setInterval(nextSlide,20000);
-}
-
-pauseButton.onclick = function(){
-    if(playing){ pauseSlideshow(); }
-    else{ playSlideshow(); }
-};
-
-var next = document.getElementById('next');
-var previous = document.getElementById('previous');
-
-next.onclick = function(){
-    pauseSlideshow();
-    nextSlide();
-};
-previous.onclick = function(){
-    pauseSlideshow();
-    previousSlide();
-};
-</script>
-	</div>	
-	
+		<div id="nav-buttons">
+			<div id="motd-tabs" style="text-align:center;">
+		  <a class="btn" href="faq.html" style="text-decoration: none">FAQ</a>
+		  <a class="btn" title="Предложите своё аниме для совместного просмотра" href="requests.html" style="text-decoration: none" >Реквесты</a>
+		  <a class="btn" href="raspisanie.html" style="text-decoration: none" >Расписание</a>
+	  		</div>
+		</div>
         <div id="links" style="background: black; border: 1px solid;border-style: solid;border-color: #836fc1;padding-left: 5px;margin-top: 15px;margin-left: 10vw;margin-right: 10vw;">
 <center>
 <font color="#836fc1" size="5">Наши комнаты</font> <br />
