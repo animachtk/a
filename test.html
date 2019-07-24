@@ -1,0 +1,95 @@
+<div class="container">
+  <ul id="slides">
+    <li class="slide showing">
+            <div id="slide-block1" class="shadow">
+            <a href="https://risens.team/anime/" target="_blank">Risens Team</a>
+            <a href="http://wikino.net/" target="_blank">wikino.net</a>
+            <a href="https://animego.org/" target="_blank">animego.org</a>
+            </div>
+        <img src="/slides/img/images/slide01/random.php" style="height: 250px;position: absolute;bottom: 0px;left: 15vw;"/>
+    </li>
+    <li class="slide">
+        <div id="slide-block">
+<img src="/slides/img/images/slide02/random.php" style="height: 250px;position: absolute;bottom: 0px;"/>
+        </div>
+        </li>
+    <li class="slide">
+            <div id="slide-block">
+        <center>
+            <font class="shadow">
+                Здесь должна была быть важная информация
+            </font>
+        </center>
+        <img src="img/002.png" style="height: 200px"/><a target="_blank" href=""></a>
+            </div>
+        </li>
+  </ul>
+<center>
+  <div class="buttons" style="position: inherit !important;margin: auto">
+    <button class="controls" id="previous" style="float: left">&lt;</button>
+
+    <button class="controls" id="pause" style="margin: auto; margin-top: 10px">&#10074;&#10074;</button>
+
+    <button class="controls" id="next" style="float: right; margin-right: 15px">&gt;</button>
+  </div>
+</center>
+</div>
+
+<script>
+var controls = document.querySelectorAll('.controls');
+for(var i=0; i<controls.length; i++){
+    controls[i].style.display = 'inline-block';
+}
+
+var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,20000);
+
+function nextSlide(){
+    goToSlide(currentSlide+1);
+}
+
+function previousSlide(){
+    goToSlide(currentSlide-1);
+}
+
+function goToSlide(n){
+    slides[currentSlide].className = 'slide';
+    currentSlide = (n+slides.length)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+}
+
+
+var playing = true;
+var pauseButton = document.getElementById('pause');
+
+function pauseSlideshow(){
+    pauseButton.innerHTML = '&#9658;'; // play character
+    playing = false;
+    clearInterval(slideInterval);
+}
+
+function playSlideshow(){
+    pauseButton.innerHTML = '&#10074;&#10074;'; // pause character
+    playing = true;
+    slideInterval = setInterval(nextSlide,20000);
+}
+
+pauseButton.onclick = function(){
+    if(playing){ pauseSlideshow(); }
+    else{ playSlideshow(); }
+};
+
+var next = document.getElementById('next');
+var previous = document.getElementById('previous');
+
+next.onclick = function(){
+    pauseSlideshow();
+    nextSlide();
+};
+previous.onclick = function(){
+    pauseSlideshow();
+    previousSlide();
+};
+</script>
+</div>
