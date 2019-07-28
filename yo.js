@@ -107,7 +107,7 @@ function yo(sel) {
     var btns = {};
     options.button = (options.button)
         ? options.button
-        : 'moonwalk: {Q} {T}, hdgo: {Q} {T}, kodik: {Q} {T}';
+        : 'moonwalk: {Q} {T}, hdgo: {Q} {T}, kodik: {Q} {T}, videocdn: {Q} {T}';
     if (options.button) {
         options.button.split(',').forEach(function (button) {
             var btn = button.split(':');
