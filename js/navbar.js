@@ -11,18 +11,18 @@ $('<nav class="navbar navbar-inverse navbar-fixed-top">\
         <div id="navbar" class="collapse navbar-collapse">\
             <ul class="nav navbar-nav">\
                 <li>\
-                    <a href="faq.html">FAQ</a>\
+                    <a href="faq">FAQ</a>\
                 </li>\
                 <li>\
-                    <a href="requests.html">Реквесты</a>\
+                    <a href="requests">Реквесты</a>\
                 </li>\
                 <li>\
-                    <a href="raspisanie.html">Расписание</a>\
+                    <a href="raspisanie">Расписание</a>\
                 </li>\
             </ul>\
             <ul class="nav navbar-nav navbar-right">\
 		<li>\
-                    <a href="contact.html">Контакты</a>\
+                    <a href="contact">Контакты</a>\
                 </li>\
             </ul>\
         </div>\
