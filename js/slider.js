@@ -236,3 +236,6 @@
 
       }
     }());
+	 var slider = multiItemSlider('.slider', {
+      isCycling: false
+    });
