@@ -236,7 +236,3 @@
 
       }
     }());
-
-    var slider = multiItemSlider('.slider', {
-      isCycling: true
-    })
