@@ -1,5 +1,6 @@
 ﻿$.getScript("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js");
-$(`<nav class="navbar navbar-inverse navbar-fixed-top">
+$(`
+<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -41,4 +42,9 @@ $(`<nav class="navbar navbar-inverse navbar-fixed-top">
             </ul>
         </div>
     </div>
-</nav>`).insertBefore('#wrap');	
+</nav>
+<style>
+.dropdown-menu>li>a {color: white;}
+.dropdown-menu>li>a:hover {color: black;}
+</style>
+`).insertBefore('#wrap');	
