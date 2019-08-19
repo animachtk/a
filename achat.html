@@ -74,15 +74,12 @@
 <center><font size="5" color="#836fc1">Стримы с музыкой и аниме</font></center>
   <div class="slider">
     <div class="slider__wrapper">
-      <div class="slider__item">
-        <div class="video"><iframe width="100%" src="https://www.youtube-nocookie.com/embed/qUf4MlEkVxk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	<div class="slider__item">
+        <div class="video"><iframe src="https://goodgame.ru/player?157239" frameborder="0" allowfullscreen="true">
+        </iframe></div>
       </div>
       <div class="slider__item">
         <div class="video"><iframe width="100%" src="https://www.youtube.com/embed/8-vC2XtLw3s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-      </div>
-      <div class="slider__item">
-        <div class="video"><iframe src="https://goodgame.ru/player?157239" frameborder="0" allowfullscreen="true">
-        </iframe></div>
       </div>
       <div class="slider__item">
         <div class="video"><iframe width="100%" src="https://www.youtube.com/embed/hHW1oY26kxQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -117,7 +114,7 @@ if (!$(this).hasClass('btn-success')) {
 $(this).addClass('btn-success').html('<img title="Закрыть канал в окне" src="https://dl.dropbox.com/s/08z48orn2e6ft7t/chat_img.png"/>');
 $('#chat').hide();$('<div id="aframe"><iframe src="http://synchtube.ru/r/pururin" width="100%" frameborder="0" ></iframe>').appendTo("#leftpanel");
 } else {
-$(this).removeClass('btn-success').html('<img title="Открыть канал в окне" href="requests.html" src="https://dl.dropbox.com/s/08z48orn2e6ft7t/chat_img.png"/>');
+$(this).removeClass('btn-success').html('<img title="Открыть канал в окне" src="https://dl.dropbox.com/s/08z48orn2e6ft7t/chat_img.png"/>');
 $('#aframe').remove();$('#chat').show();}
   });  
 </script>
