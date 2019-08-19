@@ -78,7 +78,7 @@ left: -.5em;
 border-left-color: #9097A2;
 }
 a:hover{cursor: pointer}
-@media (max-width: 1015px){
+@media (min-width: 1015px){
 #videowrap{width: 70vw}
 }
 </style>
