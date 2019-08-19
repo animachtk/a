@@ -18,7 +18,6 @@
 #leftpanel {background-color: transparent;
 }
 }
-
 @media (max-width: 1015px){
 #mainpage {
     padding-top: 50px;
@@ -31,7 +30,6 @@
 }
 #vk_groups{display: none}
 }
-
 @media (min-width: 1015px){
 #aframe > iframe {
     position: fixed;
@@ -70,27 +68,15 @@
 	
 <script src="js/navbar.js"></script>
 
-<div id="mainpage"style="margin-left: 30%;width: 40%;min-height: 100%;float: left; padding-left: 5px;padding-right: 5px">
+<div id="mainpage"style="margin-left: 30%;width: 70%;min-height: 100%;float: left; padding-left: 5px;padding-right: 5px">
 <center><font size="5" color="#836fc1">Стримы с музыкой и аниме</font></center>
-  <div class="slider">
-    <div class="slider__wrapper">
-	<div class="slider__item">
-        <div class="video"><iframe src="https://goodgame.ru/player?157239" frameborder="0" allowfullscreen="true">
-        </iframe></div>
-      </div>
-      <div class="slider__item">
-        <div class="video"><iframe width="100%" src="https://www.youtube.com/embed/8-vC2XtLw3s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-      </div>
-      <div class="slider__item">
-        <div class="video"><iframe width="100%" src="https://www.youtube.com/embed/hHW1oY26kxQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-      </div>
-	  <div class="slider__item">
-        <div class="video"><iframe width="560" src="https://www.youtube-nocookie.com/embed/plqYLV_Bkek?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-      </div>
-    </div>
-    <a class="slider__control slider__control_left" href="#" role="button"></a>
-    <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
-  </div>
+	<div id="videowrap">
+<div class="video">
+	<iframe src="https://goodgame.ru/player?157239" frameborder="0" allowfullscreen="true"></iframe>
+</div>
+	</div>
+<ol class="rectangle"></ol>
+  <script src="/js/streamlist.js"></script>
 
   <script src="js/slider.js"></script>
 	<script>
@@ -121,23 +107,9 @@ $('#aframe').remove();$('#chat').show();}
 <iframe src="https://araeostyle-nods.000webhostapp.com/chat/index.html" id="chat" width="100%" style="height: calc(100vh - 50px); overflow-y: none; max-height: 100%" frameborder="0" ></iframe>
     </div>
 
-<div id="right-panel" style="position: fixed;margin-left: 70%; width: 30vw;float: left;overflow-y: auto">
-<!-- VK Widget -->
-        <div id="vk_groups" style="height: calc(100vh - 50px) !important"></div>
-<script type="text/javascript">
-VK.Widgets.Group("vk_groups", {mode: 4, wide: 1, width: "inherit", height: "500", color1: '000000', color2: 'FFFFFF', color3: '1D84D9'}, 107685829);
-</script>
-<script>
-var vk_groups=document.getElementById('vk_groups');
-07
- //alert(document.body.clientHeight)
-08
- vk_groups.style.height=100vh
-09
- }
+<!--<div id="right-panel" style="position: fixed;margin-left: 70%; width: 30vw;float: left;overflow-y: auto">
 
-</script>
-</div>
+</div>-->
 
 </div>
 
@@ -145,5 +117,3 @@ var vk_groups=document.getElementById('vk_groups');
 
 
 </body>
-
-
