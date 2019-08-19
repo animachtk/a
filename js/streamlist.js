@@ -4,7 +4,8 @@
 stream1 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/8-vC2XtLw3s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
 stream2 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/hHW1oY26kxQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
 stream3 = function(){$(`<div class="video"><iframe width="560" src="https://www.youtube-nocookie.com/embed/plqYLV_Bkek?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
-stream4 = function(){$(`<div class="video"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tNkZsRW7h2c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
+stream4 = function(){$(`<div class="video"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tNkZsRW7h2c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');}
+stream5 = function(){$(`<div class="video"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DSGyEsJ17cI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
 
 $('<li><a><span id="nr-stream" class="list-item" >NateRou - LiveStream GG</span></a></li>').appendTo(".rectangle").on("click", function() {
 $('.video').remove();nr();
@@ -28,6 +29,10 @@ $('.video').remove();stream3();
 
 Stream4 = $('<li><a><span class="list-item" >🔴Space Ambient Music LIVE 24/7: Space Traveling Background Music, Music for Stress Relief, Dreaming</span></a></li>').appendTo(".rectangle").on("click", function() {
 $('.video').remove();stream4();
+  });
+
+Stream5 = $('<li><a><span class="list-item" >Relaxing Jazz & Bossa Nova Music Radio - 24/7 Chill Out Piano & Guitar Music - Stress Relief Jazz</span></a></li>').appendTo(".rectangle").on("click", function() {
+$('.video').remove();stream5();
   });
  
 $(`
