@@ -29,9 +29,9 @@ $(`
     <li><a href="achat">Чат и стримы с музыкой</a></li>
     <li><a href="search">Онлайн кинотеатр</a></li>
     <li><a href="asites">Аниме сайты</a></li>
-    <li><a href="team">Наша команда</a></li>
     <li role="separator" class="divider"></li>
     <li><a href="rules">Правила</a></li>
+    <li><a href="team">Наша команда</a></li>	
   </ul>
 		</li>
             </ul>
