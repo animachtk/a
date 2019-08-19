@@ -1,0 +1,72 @@
+﻿fs = function(){$(`<div class="video"><iframe src="https://goodgame.ru/player?157239" frameborder="0" allowfullscreen="true"></iframe></div>`).appendTo('#videowrap');}
+stream1 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/8-vC2XtLw3s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
+stream2 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/hHW1oY26kxQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
+stream3 = function(){$(`<div class="video"><iframe width="560" src="https://www.youtube-nocookie.com/embed/plqYLV_Bkek?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
+
+FANStream = $('<li><a><span id="fan-stream" class="list-item" >Телеканал FAN</span></a></li>').appendTo(".rectangle").on("click", function() {
+$('.video').remove();fs();
+  });
+  
+Stream1 = $('<li><a><span class="list-item" >24時間東方アレンジライブ【B】</span></a></li>').appendTo(".rectangle").on("click", function() {
+$('.video').remove();stream1();
+  });
+  
+Stream2 = $('<li><a><span class="list-item" >lofi hip hop radio - beats to relax/study to</span></a></li>').appendTo(".rectangle").on("click", function() {
+$('.video').remove();stream2();
+  });
+
+Stream3 = $('<li><a><span class="list-item" >VaporFunk Station</span></a></li>').appendTo(".rectangle").on("click", function() {
+$('.video').remove();stream3();
+  });
+ 
+$(`
+<style>
+.rectangle {
+counter-reset: li; 
+list-style: none; 
+font: 14px "Trebuchet MS", "Lucida Sans";
+padding: 0;
+text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+.rectangle a {
+position: relative;
+display: block;
+padding: .4em .4em .4em .8em;
+margin: .5em 0 .5em 2.5em;
+background: #D3D4DA;
+color: #444;
+text-decoration: none;
+transition: all .3s ease-out;
+}
+.rectangle a:hover {background: #DCDDE1;}       
+.rectangle a:before {
+content: counter(li);
+counter-increment: li;
+position: absolute;
+left: -2.5em;
+top: 50%;
+margin-top: -1em;
+background: #9097A2;
+height: 2em;
+width: 2em;
+line-height: 2em;
+text-align: center;
+font-weight: bold;
+}
+.rectangle a:after {
+position: absolute;
+content: "";
+border: .5em solid transparent;
+left: -1em;
+top: 50%;
+margin-top: -.5em;
+transition: all .3s ease-out;
+}
+.rectangle a:hover:after {
+left: -.5em;
+border-left-color: #9097A2;
+}
+a:hover{cursor: pointer}
+#videowrap{width: 70vw}
+</style>
+`).appendTo('body');
