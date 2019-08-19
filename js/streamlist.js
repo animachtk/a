@@ -21,7 +21,7 @@ $('.video').remove();stream3();
   });
 
 Stream4 = $('<li><a><span class="list-item" >🔴Space Ambient Music LIVE 24/7: Space Traveling Background Music, Music for Stress Relief, Dreaming</span></a></li>').appendTo(".rectangle").on("click", function() {
-$('.video').remove();stream3();
+$('.video').remove();stream4();
   });
  
 $(`
