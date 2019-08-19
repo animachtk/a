@@ -38,12 +38,12 @@ position: relative;
 display: block;
 padding: .4em .4em .4em .8em;
 margin: .5em 0 .5em 2.5em;
-background: #D3D4DA;
-color: #444;
+background: #3a4586;
+color: #fff;
 text-decoration: none;
 transition: all .3s ease-out;
 }
-.rectangle a:hover {background: #DCDDE1;}       
+.rectangle a:hover {background: #DCDDE1;color: black}       
 .rectangle a:before {
 content: counter(li);
 counter-increment: li;
