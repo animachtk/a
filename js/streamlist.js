@@ -1,8 +1,14 @@
 ﻿fs = function(){$(`<div class="video"><iframe src="https://goodgame.ru/player?157239" frameborder="0" allowfullscreen="true"></iframe></div>`).appendTo('#videowrap');}
+﻿nr = function(){$(`<div class="video"><iframe src="https://goodgame.ru/player?61358" frameborder="0" allowfullscreen="true">
+        </iframe></div>`).appendTo('#videowrap');}
 stream1 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/8-vC2XtLw3s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
 stream2 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/hHW1oY26kxQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
 stream3 = function(){$(`<div class="video"><iframe width="560" src="https://www.youtube-nocookie.com/embed/plqYLV_Bkek?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
 stream4 = function(){$(`<div class="video"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tNkZsRW7h2c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
+
+$('<li><a><span id="nr-stream" class="list-item" >NateRou - LiveStream GG</span></a></li>').appendTo(".rectangle").on("click", function() {
+$('.video').remove();nr();
+  });
 
 FANStream = $('<li><a><span id="fan-stream" class="list-item" >Телеканал FAN</span></a></li>').appendTo(".rectangle").on("click", function() {
 $('.video').remove();fs();
