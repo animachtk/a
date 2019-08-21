@@ -179,11 +179,11 @@ xmlhttp.send();
 document.getElementById("infostand").innerHTML=xmlhttp.responseText;
 }
 
-function sayHi() {
+function loadInfo() {
   loadXMLDoc();
 }
-
-setInterval(sayHi, 1000);
+let InfoOnLoad = setTimeout(loadInfo, 10);
+setInterval(loadInfo, 45000);
 $(`<div id="infostand"><h2>Соединение с сервером...</h2></div>
 `).appendTo('#news');
 </script>
