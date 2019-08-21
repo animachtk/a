@@ -1,12 +1,15 @@
 ﻿fs = function(){$(`<div class="video"><iframe src="https://goodgame.ru/player?157239" frameborder="0" allowfullscreen="true"></iframe></div>`).appendTo('#videowrap');}
 ﻿nr = function(){$(`<div class="video"><iframe src="https://goodgame.ru/player?61358" frameborder="0" allowfullscreen="true">
         </iframe></div>`).appendTo('#videowrap');}
-stream0 = function(){$(`<div class="video"><iframe width="864" height="486" src="https://www.youtube.com/embed/Fe8Wp4VQZCA?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
+stream0 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/Fe8Wp4VQZCA?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
 stream1 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/8-vC2XtLw3s?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
 stream2 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/hHW1oY26kxQ?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
 stream3 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/plqYLV_Bkek?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
 stream4 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/tNkZsRW7h2c?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');}
 stream5 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/DSGyEsJ17cI?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
+stream6 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/uXSeF2FgAdg?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
+stream7 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/8wURCYMVWzg?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
+stream8 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/LUDEKMsxN0g?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
 
 $('<li><a><span id="nr-stream" class="list-item" >NateRou - LiveStream GG</span></a></li>').appendTo(".rectangle").on("click", function() {
 $('.video').remove();nr();
@@ -38,6 +41,18 @@ $('.video').remove();stream4();
 
 $('<li><a><span class="list-item" >Relaxing Jazz & Bossa Nova Music Radio - 24/7 Chill Out Piano & Guitar Music - Stress Relief Jazz</span></a></li>').appendTo(".rectangle").on("click", function() {
 $('.video').remove();stream5();
+  });
+
+$('<li><a><span class="list-item" >Synthstream FM (synthwave radio 24/7)</span></a></li>').appendTo(".rectangle").on("click", function() {
+$('.video').remove();stream6();
+  });
+
+$('<li><a><span class="list-item" >AESTHETIC FM | Vaporwave Radio • Synthwave • Retro • Ambient • Live 24/7 🎧</span></a></li>').appendTo(".rectangle").on("click", function() {
+$('.video').remove();stream7();
+  });
+
+$('<li><a><span class="list-item" >🎧★★★ Synthwave - Retrowave - Retro Electro Livestream ★★★🎧</span></a></li>').appendTo(".rectangle").on("click", function() {
+$('.video').remove();stream8();
   });
  
 $(`
