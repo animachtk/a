@@ -1,5 +1,5 @@
-﻿fs = function(){$(`<div class="video"><iframe src="https://goodgame.ru/player?157239" frameborder="0" allowfullscreen="true"></iframe></div>`).appendTo('#videowrap');}
-﻿nr = function(){$(`<div class="video"><iframe src="https://goodgame.ru/player?61358" frameborder="0" allowfullscreen="true">
+﻿fs = function(){$(`<div class="video"><iframe src="https://goodgame.ru/player?157239#autoplay" frameborder="0" allowfullscreen="true"></iframe></div>`).appendTo('#videowrap');}
+﻿nr = function(){$(`<div class="video"><iframe src="https://goodgame.ru/player?61358#autoplay" frameborder="0" allowfullscreen="true">
         </iframe></div>`).appendTo('#videowrap');}
 stream0 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/Fe8Wp4VQZCA?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
 stream1 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/8-vC2XtLw3s?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
