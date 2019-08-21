@@ -182,7 +182,7 @@ document.getElementById("infostand").innerHTML=xmlhttp.responseText;
 function sayHi() {
   loadXMLDoc();
 }
-loadXMLDoc();
+sayHi();
 setInterval(sayHi, 5000);
 $(`<div id="infostand"><h2>Соединение с сервером...</h2></div>
 `).appendTo('#news');
