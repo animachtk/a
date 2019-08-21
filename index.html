@@ -55,18 +55,18 @@
 <script>
 	function loadMainPage()
 {
-var xmlhttp;
+var xmlMain;
 if (window.XMLHttpRequest)
   {// код для IE7+, Firefox, Chrome, Opera, Safari
-  xmlhttp=new XMLHttpRequest();
+  xmlMain=new XMLHttpRequest();
   }
 else
   {// код для IE6, IE5
-  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  xmlMain=new ActiveXObject("Microsoft.XMLHTTP");
   }
-xmlhttp.open("GET","https://dl.dropbox.com/s/crocpmed5nulcfw/MainInfo.html",false); // false - используем СИНХРОННУЮ передачу
-xmlhttp.send();
-document.getElementById("infostand").innerHTML=xmlhttp.responseText;
+xmlMain.open("GET","https://dl.dropbox.com/s/crocpmed5nulcfw/MainInfo.html",false); // false - используем СИНХРОННУЮ передачу
+xmlMain.send();
+document.getElementById("infostand").innerHTML=xmlMain.responseText;
 }
 
 function loadMainInfo() {
