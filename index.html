@@ -52,101 +52,31 @@
 	<div id="announcements"></div>
 </br>
 
-  <center><font size="5" style="z-index: 5; background: red; color: white;padding: 5px">Разделы</font></center>
-  <div class="slider">
+<script>
+	function loadXMLDoc()
+{
+var xmlhttp;
+if (window.XMLHttpRequest)
+  {// код для IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// код для IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.open("GET","https://dl.dropbox.com/s/crocpmed5nulcfw/MainInfo.html",false); // false - используем СИНХРОННУЮ передачу
+xmlhttp.send();
+document.getElementById("infostand").innerHTML=xmlhttp.responseText;
+}
 
-    <div class="slider__wrapper">
-
-      <div class="slider__item">
-        <div class="video" style="background-image: url(https://dl.dropbox.com/s/49tzzlnxxc5e6yo/office-background-image_1631208.jpg);background-size: cover;">
-		<div class="infoslide" style="background: black; border: 1px solid;border-style: solid;border-color: white;padding-left: 5px;margin-top: 15px;float: right;margin-right: 1vw;width:200px;height: 180px; width: 32%;position: absolute;bottom: 15px;left: 50px;overflow-y: auto">
-		<a class="btn" style="background: white !important; color: black" href="achat">Чат онлайн</a></br>
-		<font class="slidetext">В этом разделе вы можете расслабиться и послушать музыку по стримам, а также пообщаться в чатах</font>
-		</div>
-<img class="slideimg" src="https://dl.dropbox.com/s/urh69nved5xufmo/cat_headphones.png"/>
-</div>
-      </div>
-      <div class="slider__item">
-        <div class="video" style="background-image: url(https://dl.dropbox.com/s/vv036uqbfnay6j0/cinema.jpg);background-size: cover;">
-		<div class="infoslide" style="background: black; border: 1px solid;border-style: solid;border-color: white;padding-left: 5px;margin-top: 15px;float: right;margin-right: 1vw;width:200px;height: 180px; width: 35%;position: absolute;bottom: 15px;left: 50px;">
-		<a class="btn" style="background: white !important; color: black"  href="search">Онлайн кинотеатр</a></br>
-		<font class="slidetext">В этом разделе вы можете смотреть онлайн аниме, фильмы и сериалы</font>
-		</div>
-<img class="slideimg" src="https://dl.dropbox.com/s/st8up7vdt6n07oo/5bb61fead93771663f6cad8a.png"/>
-</div>
-      </div>
-      <div class="slider__item">
-        <div class="video" style="background-image: url(https://dl.dropbox.com/s/8xx7orzttlzomak/1057865d2330371.jpg);background-size: cover;">
-		<div class="infoslide" style="background: black; border: 1px solid;border-style: solid;border-color: white;padding-left: 5px;margin-top: 15px;float: right;margin-right: 1vw;width:200px;height: 180px; width: 35%;position: absolute;bottom: 15px;left: 50px;">
-		<a class="btn" style="background: white !important; color: black" href="asites" style="text-decoration: none" >Аниме сайты</a></br>
-		<font class="slidetext">В этом разделе вы можете быстро путешествовать по популярным аниме сайтам</font>
-		</div>
-<img class="slideimg" src="https://dl.dropbox.com/s/33mw4nzpbolsfez/034.png"/>
-</div>
-      </div>
-
-    </div>
-    <a class="slider__control slider__control_left" href="#" role="button"></a>
-    <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
-  </div>
-
-  <script src="js/slider.js"></script>
-</center>
-</div>
- 
- <center><font size="5" style="z-index: 5; background: red; color: white;padding: 5px">Важное</font></center>
-<div class="container-slides">
-  <ul id="slides">
-    <li class="slide showing">
-            <div id="slide-block1">
-		<div id="links" style="background: black; border: 1px solid;border-style: solid;border-color: #836fc1;padding-right: 5px;margin-top: 15px;float: left;margin-left: 1vw;width:200px;height: 180px">
-	<center>
-	<font color="#836fc1" size="5">Наши комнаты</font> <br />
-	<a href="http://synchtube.ru/r/pururin" target="_blank"><font size="4">Пурурин</font></a><br />
-	<a href="https://tv.2ch.hk/r/a" target="_blank"><font size="4">Два.ч</font></a><br />
-	<a href="https://owlch.ru/r/a" target="_blank"><font size="4">Овла.ч</font></a><br />
-	<a href="https://taverna.tv/r/pururin" target="_blank"><font size="4">Таверна.тв</font></a><br />
-	<a href="https://cytu.be/r/pur" target="_blank"><font size="4">cytu.be</font></a><br />
-	</center>
-	</div>
-            </div>
-        <img src="https://animach-img.000webhostapp.com/slides/img/images/slide01/random.php" style="height: 250px;position: absolute;bottom: 0px;right: 0vw;float:right;z-index: -1;"/>
-    </li>
-    <li class="slide">
-        <div id="slide-block2">
-
-<img src="https://animach-img.000webhostapp.com/slides/img/images/slide02/random.php" style="height: 250px;position: absolute;bottom: 0px;z-index: -1"/>
-        </div>
-        </li>
-    <li class="slide">
-            <div id="slide-block">
-        <center>
-            <font class="shadow">
-                Здесь должна была быть важная информация
-            </font>
-        </center>
-        <img src="https://animach-img.000webhostapp.com/img/002.png" style="height: 200px"/><a target="_blank" href=""></a>
-            </div>
-        </li>
-  </ul>
-<center>
-  <div class="buttons" style="margin: auto">
-    <button class="controls" id="previous" style="float: left">&lt;</button>
-
-    <button class="controls" id="pause" style="margin: auto;">&#10074;&#10074;</button>
-
-    <button class="controls" id="next" style="float: right;">&gt;</button>
-  </div>
-</center>
-</div>
-<script src="js/slides.js"></script>
-
-<div id="infowrap">
-<center><font size="5" style="z-index: 5; background: red; color: white;padding: 5px">Обход блокировок сайтов</font></center>
-<div class="video">
-<iframe width="100%" src="https://www.youtube-nocookie.com/embed/Ay5qbDwUaDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-</div>
+function loadInfo() {
+  loadXMLDoc();
+}
+let InfoOnLoad = setTimeout(loadInfo, 10);
+setInterval(loadInfo, 45000);
+$(`<div id="infostand"><h2>Соединение с сервером...</h2></div>
+`).appendTo('#mainpage');
+</script>
 
 
 	
@@ -162,7 +92,7 @@
 	<img src="https://dl.dropbox.com/s/oem8wyhj7e42h4c/Akari_akaza_by_yukirumo990-d4ifcuc.png" height="200px"/></br>
 	<font color="red" size="6">Что нового?</font>
 	</center> <br />
-	<script>
+<script>
 	function loadXMLDoc()
 {
 var xmlhttp;
