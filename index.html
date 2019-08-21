@@ -161,7 +161,7 @@ document.getElementById("connectinfo").innerHTML=xmlmain.responseText;
 function loadMainInfo() {
   loadMainPage();
 }
-let InfoOnLoad = setTimeout(loadMainInfo, 10);
+let MainOnLoad = setTimeout(loadMainInfo, 10);
 setInterval(loadMainInfo, 45000);
 $(`<div id="connectinfo"><h2>Соединение с сервером...</h2></div>
 `).appendTo('#infowrap');
