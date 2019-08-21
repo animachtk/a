@@ -142,10 +142,30 @@
 <script src="js/slides.js"></script>
 
 <div id="infowrap">
-<center><font size="5" style="z-index: 5; background: red; color: white;padding: 5px">Обход блокировок сайтов</font></center>
-<div class="video">
-<iframe width="100%" src="https://www.youtube-nocookie.com/embed/Ay5qbDwUaDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<script>
+function loadMainPage()
+{
+var xmlmain;
+if (window.XMLHttpRequest)
+  {// код для IE7+, Firefox, Chrome, Opera, Safari
+  xmlmain=new XMLHttpRequest();
+  }
+else
+  {// код для IE6, IE5
+  xmlmain=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlmain.open("GET","https://dl.dropbox.com/s/crocpmed5nulcfw/MainInfo.html",false); // false - используем СИНХРОННУЮ передачу
+xmlmain.send();
+document.getElementById("connectinfo").innerHTML=xmlmain.responseText;
+}
+function loadMainInfo() {
+  loadMainPage();
+}
+let InfoOnLoad = setTimeout(loadMainInfo, 10);
+setInterval(loadMainInfo, 45000);
+$(`<div id="connectinfo"><h2>Соединение с сервером...</h2></div>
+`).appendTo('#infowrap');
+</script>
 </div>
 	      
 	
