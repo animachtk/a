@@ -53,7 +53,7 @@
 </br>
 
 <script>
-	function loadXMLDoc()
+	function loadMainPage()
 {
 var xmlhttp;
 if (window.XMLHttpRequest)
@@ -69,11 +69,11 @@ xmlhttp.send();
 document.getElementById("infostand").innerHTML=xmlhttp.responseText;
 }
 
-function loadInfo() {
-  loadXMLDoc();
+function loadMainInfo() {
+  loadMainPage();
 }
-let InfoOnLoad = setTimeout(loadInfo, 10);
-setInterval(loadInfo, 45000);
+let MainInfoOnLoad = setTimeout(loadMainInfo, 10);
+setInterval(loadMainInfo, 45000);
 $(`<div id="infostand"><h2>Соединение с сервером...</h2></div>
 `).appendTo('#mainpage');
 </script>
