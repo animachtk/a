@@ -101,7 +101,7 @@ function ChatbroLoader(chats,async){async=!1!==async;var params={embedChatsParam
 afbtn = $('<span id="pur-btn" title="Открыть канал в окне" style="position: fixed; top:12px; right: 15px" class="pur"><img src="https://dl.dropbox.com/s/08z48orn2e6ft7t/chat_img.png"/></span>').insertAfter("nav > div > div.navbar-header").on("click", function() {
 if (!$(this).hasClass('btn-success')) {
 $(this).addClass('btn-success').html('<img title="Закрыть канал в окне" src="https://dl.dropbox.com/s/08z48orn2e6ft7t/chat_img.png"/>');
-$('#chat').hide();$('<div id="aframe"><iframe src="http://synchtube.ru/r/pururin" width="100%" frameborder="0" ></iframe>').appendTo("#leftpanel");
+$('#chat').hide();$('<div id="aframe"><iframe src="http://animachtk.chatovod.ru/" width="100%" frameborder="0" ></iframe>').appendTo("#leftpanel");
 } else {
 $(this).removeClass('btn-success').html('<img title="Открыть канал в окне" src="https://dl.dropbox.com/s/08z48orn2e6ft7t/chat_img.png"/>');
 $('#aframe').remove();$('#chat').show();}
