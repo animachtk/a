@@ -8,6 +8,10 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script id="chatBroEmbedCode">
+/* Chatbro Widget Embed Code Start */
+function ChatbroLoader(chats,async){async=!1!==async;var params={embedChatsParameters:chats instanceof Array?chats:[chats],lang:navigator.language||navigator.userLanguage,needLoadCode:'undefined'==typeof Chatbro,embedParamsVersion:localStorage.embedParamsVersion,chatbroScriptVersion:localStorage.chatbroScriptVersion},xhr=new XMLHttpRequest;xhr.withCredentials=!0,xhr.onload=function(){eval(xhr.responseText)},xhr.onerror=function(){console.error('Chatbro loading error')},xhr.open('GET','//www.chatbro.com/embed.js?'+btoa(unescape(encodeURIComponent(JSON.stringify(params)))),async),xhr.send()}/* Chatbro Widget Embed Code End */ChatbroLoader({encodedChatId: '4463j'});
+</script>
   </head>
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 <link rel="stylesheet" href="https://dl.dropbox.com/s/euyvs64d3gojt40/a.css" >
@@ -103,8 +107,9 @@ $(this).removeClass('btn-success').html('<img title="Открыть канал �
 $('#aframe').remove();$('#chat').show();}
   });  
 </script>
-<!--<iframe src="https://araeostyle-nods.000webhostapp.com/chat/index.html" id="chat" width="100%" style="height: calc(100vh - 50px); overflow-y: none; max-height: 100%" frameborder="0" ></iframe>-->
-<iframe src="https://animachtk.chatbro.com" id="chat" width="100%" style="height: calc(100vh - 126px); overflow-y: none; max-height: 100%" frameborder="0" ></iframe>
+<!--<iframe src="https://araeostyle-nods.000webhostapp.com/chat/index.html" id="chat" width="100%" style="height: calc(100vh - 50px); overflow-y: none; max-height: 100%" frameborder="0" ></iframe>
+<iframe src="https://animachtk.chatbro.com" id="chat" width="100%" style="height: calc(100vh - 126px); overflow-y: none; max-height: 100%" frameborder="0" ></iframe>-->
+<div id="achat"></div>
     </div>
 
 <!--<div id="right-panel" style="position: fixed;margin-left: 70%; width: 30vw;float: left;overflow-y: auto">
