@@ -69,7 +69,6 @@ position: relative;
 display: block;
 padding: .4em .4em .4em .8em;
 margin: .5em 0 .5em 2.5em;
-background: #3a4586;
 color: #fff;
 text-decoration: none;
 transition: all .3s ease-out;
