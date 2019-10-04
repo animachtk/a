@@ -2,14 +2,14 @@
 ﻿nr = function(){$(`<div class="video"><iframe src="https://goodgame.ru/player?61358#autoplay" frameborder="0" allowfullscreen="true">
         </iframe></div>`).appendTo('#videowrap');}
 stream0 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/O66ttK_IuDk?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
-stream1 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/8-vC2XtLw3s?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
+stream1 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/jvvJxaYlXJ0?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
 stream2 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/hHW1oY26kxQ?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
 stream3 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/LgMMYbmiYSc?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
 stream4 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/tNkZsRW7h2c?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');}
 stream5 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/DSGyEsJ17cI?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
 stream6 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/uXSeF2FgAdg?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
 stream7 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/8wURCYMVWzg?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
-stream8 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/LUDEKMsxN0g?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
+stream8 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/3iaE8M4I9Vg?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
 
 $('<li><a><span id="nr-stream" class="list-item" >NateRou - LiveStream GG</span></a></li>').appendTo(".rectangle").on("click", function() {
 $('.video').remove();nr();
@@ -51,7 +51,7 @@ $('<li><a><span class="list-item" >AESTHETIC FM | Vaporwave Radio • Synthwave 
 $('.video').remove();stream7();
   });
 
-$('<li><a><span class="list-item" >🎧★★★ Synthwave - Retrowave - Retro Electro Livestream ★★★🎧</span></a></li>').appendTo(".rectangle").on("click", function() {
+$('<li><a><span class="list-item" >24/7 Electro Swing Radio - Enjoy the best Swings in 2019 🎧</span></a></li>').appendTo(".rectangle").on("click", function() {
 $('.video').remove();stream8();
   });
  
