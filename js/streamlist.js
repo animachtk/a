@@ -1,6 +1,7 @@
 ﻿fs = function(){$(`<div class="video"><iframe src="https://goodgame.ru/player?157239#autoplay" frameborder="0" allowfullscreen="true"></iframe></div>`).appendTo('#videowrap');}
 ﻿nr = function(){$(`<div class="video"><iframe src="https://goodgame.ru/player?61358#autoplay" frameborder="0" allowfullscreen="true">
         </iframe></div>`).appendTo('#videowrap');}
+estream = function(){$(`<div class="video"><iframe width="685" height="428" src="https://0n-line.tv/iframe/player.php?file=gs&poster=gs&server=2" frameborder="0" allowfullscreen></iframe></div>`).appendTo('#videowrap');}
 stream0 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/O66ttK_IuDk?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
 stream1 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/jvvJxaYlXJ0?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
 stream2 = function(){$(`<div class="video"><iframe width="100%" src="https://www.youtube.com/embed/hHW1oY26kxQ?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`).appendTo('#videowrap');} 
@@ -17,6 +18,10 @@ $('.video').remove();nr();
 
 $('<li><a><span id="fan-stream" class="list-item" >Телеканал FAN</span></a></li>').appendTo(".rectangle").on("click", function() {
 $('.video').remove();fs();
+  });
+
+$('<li><a><span id="e-stream" class="list-item" >Телеканал E</span></a></li>').appendTo(".rectangle").on("click", function() {
+$('.video').remove();estream();
   });
 
 $('<li><a><span class="list-item" >ACG動漫音樂放送~ ☞新的一年，新的開始，聽著音樂一同走向嶄新的旅程吧!! 『指定時間開放點播，歡迎點播!』 (24/7) 24hr</span></a></li>').appendTo(".rectangle").on("click", function() {
