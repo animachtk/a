@@ -114,6 +114,17 @@ $('#aframe').remove();$('#chat').show();}
 
 <div id="chat"></div>
     </div>
+	
+<script>
+chatbtn = $('<span id="chat-btn" title="Показать чат" style="position: fixed; top:12px; right: 15px" class="pur"><img src="https://dl.dropbox.com/s/08z48orn2e6ft7t/chat_img.png"/></span>').insertAfter("nav > div > div.navbar-header").on("click", function() {
+if (!$(this).hasClass('btn-success')) {
+$(this).addClass('btn-success').html('<img title="Спрятать чат" src="https://dl.dropbox.com/s/08z48orn2e6ft7t/chat_img.png"/>');
+$('#chat').hide();
+} else {
+$(this).removeClass('btn-success').html('<img title="Показать чат" src="https://dl.dropbox.com/s/08z48orn2e6ft7t/chat_img.png"/>');
+$('#chat').show();}
+  });  
+</script>
 
 <!--<div id="right-panel" style="position: fixed;margin-left: 70%; width: 30vw;float: left;overflow-y: auto">
 
