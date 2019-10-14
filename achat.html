@@ -116,13 +116,13 @@ $('#aframe').remove();$('#chat').show();}
     </div>
 	
 <script>
-chatbtn = $('<span id="chat-btn" title="Показать чат" style="position: fixed; top:12px; right: 15px" class="pur"><img src="https://dl.dropbox.com/s/08z48orn2e6ft7t/chat_img.png"/></span>').insertAfter("nav > div > div.navbar-header").on("click", function() {
+chatbtn = $('<span id="chat-btn" title="Спрятать чат" style="position: fixed; top:12px; right: 15px" class="btn"><i class="glyphicon glyphicon-chevron-left"></span>').insertAfter("nav > div > div.navbar-header").on("click", function() {
 if (!$(this).hasClass('btn-success')) {
-$(this).addClass('btn-success').html('<img title="Спрятать чат" src="https://dl.dropbox.com/s/08z48orn2e6ft7t/chat_img.png"/>');
-$('#chat').show();
+$(this).addClass('btn-success').html('<span title="Показать чат"><i class="glyphicon glyphicon-chevron-down"></span>');
+$('#chat').hide();
 } else {
-$(this).removeClass('btn-success').html('<img title="Показать чат" src="https://dl.dropbox.com/s/08z48orn2e6ft7t/chat_img.png"/>');
-$('#chat').hide();}
+$(this).removeClass('btn-success').html('<span title="Спрятать чат"><i class="glyphicon glyphicon-chevron-left"></span>');
+$('#chat').show();}
   });  
 </script>
 
