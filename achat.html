@@ -116,12 +116,12 @@ $('#aframe').remove();$('#chat').show();}
     </div>
 	
 <script>
-chatbtn = $('<span id="chat-btn" title="Спрятать чат" style="position: fixed; top:12px; left: 5px" class="btn"><i class="glyphicon glyphicon-chevron-left"></span>').insertAfter("nav > div > div.navbar-header").on("click", function() {
+chatbtn = $('<span id="chat-btn" title="Спрятать чат" style="position: fixed; top:28px; left: 0px"><i class="glyphicon glyphicon-chevron-down"></span>').insertAfter("nav > div > div.navbar-header").on("click", function() {
 if (!$(this).hasClass('btn-success')) {
-$(this).addClass('btn-success').html('<span title="Показать чат"><i class="glyphicon glyphicon-chevron-down"></span>');
+$(this).addClass('btn-success').html('<span title="Показать чат"><i class="glyphicon glyphicon-chevron-right"></span>');
 $('#chat').hide();
 } else {
-$(this).removeClass('btn-success').html('<span title="Спрятать чат"><i class="glyphicon glyphicon-chevron-left"></span>');
+$(this).removeClass('btn-success').html('<span title="Спрятать чат"><i class="glyphicon glyphicon-chevron-down"></span>');
 $('#chat').show();}
   });  
 </script>
