@@ -116,7 +116,7 @@ $('#aframe').remove();$('#chat').show();}
     </div>
 	
 <script>
-chatbtn = $('<span id="chat-btn" title="Спрятать чат" style="position: fixed; top:15px; left: 20px"><i class="glyphicon glyphicon-chevron-down"></span>').insertAfter("nav > div > div.navbar-header").on("click", function() {
+chatbtn = $('<span id="chat-btn" title="Спрятать чат"><i class="glyphicon glyphicon-chevron-down"></span>').insertAfter("nav > div > div.navbar-header").on("click", function() {
 if (!$(this).hasClass('btn-success')) {
 $(this).addClass('btn-success').html('<span title="Показать чат"><i class="glyphicon glyphicon-chevron-right"></span>');
 $('#leftpanel').hide();
