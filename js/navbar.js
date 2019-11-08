@@ -20,6 +20,9 @@ $(`
                 <li>
                     <a href="raspisanie">Расписание</a>
                 </li>
+                <li>
+                    <a href="viewed">Просмотренное</a>
+                </li>
 		<li class="dropdown" style="cursor: pointer;">
   <a class="dropdown-toggle"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
     Разделы
