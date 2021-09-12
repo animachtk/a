@@ -49,4 +49,4 @@ $(`
 .dropdown-menu>li>a:hover {color: black;}
 </style>
 `).insertBefore('#wrap');	
-location="https://animachtk.github.io/";
+location="https://animachtk.github.io/"+location.pathname;
